@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.corpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://images.pexels.com/photos/2706654/pexels-photo-2706654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+}
+
+.globo{
+    width: 300px;
+    height: 300px;
+    
+    border-radius: 50%;
+    background-image: url(https://cdn.pixabay.com/photo/2011/12/13/17/07/earth-11048_1280.jpg);
+    background-size: cover;
+    box-shadow:  -25px -25px 25px rgba(0, 0, 0, 0.562) inset, 5px 5px 20px rgba(250, 249, 246, 0.918) inset, 0px 0px 10px rgb(200, 243, 243);
+    transition: 0.5s;
+    animation: rotate 125s linear forwards infinite;
+}
+
+@keyframes rotate{
+    to{background-position: 100%;}
+}
